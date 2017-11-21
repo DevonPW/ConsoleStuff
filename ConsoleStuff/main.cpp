@@ -24,7 +24,8 @@ void main() {
 	// Change the internal buffer size:
 	SetConsoleScreenBufferSize(wHnd, bufferSize);
 
-	//SetConsoleDisplayMode(wHnd, CONSOLE_FULLSCREEN_MODE, &bufferSize);
+	//set to fullscreen mode
+	SetConsoleDisplayMode(wHnd, CONSOLE_FULLSCREEN_MODE, &bufferSize);
 
 	system("pause");
 }
