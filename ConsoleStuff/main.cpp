@@ -16,13 +16,11 @@ void main() {
 
 	// Set up the required window size:
 	SMALL_RECT windowSize = { 0, 0, 124, 41 };//{.Left, .Top, .Right, .Bottom}
-
 	// Change the console window size:
 	SetConsoleWindowInfo(wHnd, TRUE, &windowSize);
 
 	// Create a COORD to hold the buffer size:
 	COORD bufferSize = { 125, 42 };
-
 	// Change the internal buffer size:
 	SetConsoleScreenBufferSize(wHnd, bufferSize);
 
